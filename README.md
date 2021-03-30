@@ -32,9 +32,10 @@
 Para subir os containers Docker utilizando o orquestrador, basta executar os seguintes comandos:
 
 ```
-mvn clean install -DskipTests=true (pulando os testes pois a conexão com o banco ainda não pode ser estabelecida) 
+mvn clean install -DskipTests=true  
 docker-compose up -d 
 ```
+*pulando os testes pois a conexão com o banco ainda não pode ser estabelecida
 
 A API está com o swagger configurado, basta acessar pelo navegador o endereço: *http://localhost:8080/api/swagger-ui/*.
 
