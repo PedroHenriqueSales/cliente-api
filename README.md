@@ -10,7 +10,7 @@
 - É necessário também que cada elemento retornado pela api de clientes informe a idade;
 - Documente sua API e também disponibilize um arquivo Postman para fácil utilização da API.
 
-###Bônus 
+### Bônus 
  Para ir além das expectativas, desenvolva os itens abaixo, conforme sentir necessidade:
 - Empacote sua aplicação com Docker;
 - Forneça outros itens de infraestrutura em containers (Banco de Dados, Cache, etc);
