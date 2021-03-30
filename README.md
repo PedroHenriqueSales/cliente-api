@@ -45,6 +45,8 @@ A API também está disponível no Heroku, podendo ser acessada pela URL: *https
 
 Visando facilitar o processo de criação e publicação da API, optei por utilizar a ferramenta Spring Boot, provendo a configuração de teste, aplicação REST, JPA, entre outros.
 O banco escolhido para a persistencia dos dados foi o Postgres, por questão de familiridade.
+
 Para os testes foi utilizada a biblioteca JUnit com Mockito, para objetos simulados (mock).
+
 Foi utilizada também a ferramenta Swagger, a fim de prover uma documentação sucinta e um meio para se testar os endpoints da aplicação sem dependência de um software terceiro.
 A aplicação e o banco de dados foram empacotados em dois containers distintos, mantendo seus ambientes independentes. A orquestração destes foi realizada por meio de Docker Compose.
