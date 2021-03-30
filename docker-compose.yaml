@@ -1,0 +1,26 @@
+version: '3.1'
+services:
+  api:
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    image: api-crud
+    ports:
+      - '8080:8080'
+    environment:
+      - PROFILE=dev
+    depends_on:
+      - db
+
+  db:
+    image: postgres
+    container_name: postgres-container
+    environment:
+      - POSTGRES_USER=cliente
+      - POSTGRES_PASSWORD=cliente
+      - POSTGRES_DB=cliente
+    ports:
+      - '5430:5430'
+    volumes:
+      - ./db/data:/var/lib/postgresql/data
+    restart: always
